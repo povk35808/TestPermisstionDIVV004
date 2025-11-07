@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // --- Global Event Listeners ---
     if (customAlertOkBtn) customAlertOkBtn.addEventListener('click', hideCustomAlert);
     if (closeInvoiceModalBtn) closeInvoiceModalBtn.addEventListener('click', () => Requests.hideInvoiceModal(invoiceModal, invoiceShareStatus, shareInvoiceBtn));
-    if (shareInvoiceBtn) shareInvoiceBtn.addEventListener('click', ()_=> Requests.shareInvoiceAsImage(invoiceContent, invoiceContentWrapper, shareInvoiceBtn, invoiceShareStatus, showCustomAlert));
+    if (shareInvoiceBtn) shareInvoiceBtn.addEventListener('click', ()=> Requests.shareInvoiceAsImage(invoiceContent, invoiceContentWrapper, shareInvoiceBtn, invoiceShareStatus, showCustomAlert));
     
     // === MODIFIED: History Page Listeners (Moved Tap Handler to Requests.js) ===
     if (historyContent) { 
